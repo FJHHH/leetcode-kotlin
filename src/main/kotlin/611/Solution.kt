@@ -12,7 +12,7 @@ class Solution {
             var r = nums.lastIndex
             while (r > l) {
                 var m = l + 1
-                while (m > l && m < r) {
+                while (m in (l + 1) until r) {
                     if (valid(numl, nums[m], nums[r])) {
                         n++
                     }
