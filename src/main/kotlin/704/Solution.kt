@@ -19,16 +19,10 @@ class Solution {
                 r = mid - 1
             }
         }
-        if (nums[l] == target) {
-            return l
-        }
-        if (nums[r] == target) {
-            return r
-        }
         return -1
     }
 }
 
 fun main() {
-    println(Solution().search(intArrayOf(-1, 0, 3, 5, 9, 12), 9))
+    println(Solution().search(intArrayOf(-1,0,3,5,9,12), 13))
 }
